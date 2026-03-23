@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Title>ActiveReports Sample</Title>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Description>ActiveReports Sample</Description>
+    <Copyright>MESCIUS inc.</Copyright>
+    <Product>ActiveReports Sample</Product>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ActiveReports.Samples.CustomDataProviderUI</RootNamespace>
+    <AssemblyName>ActiveReports.Samples.CustomDataProviderUI</AssemblyName>
+    <TargetFrameworks>net472;net10.0-windows</TargetFrameworks>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformName>windows</PlatformName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseWindowsForms>true</UseWindowsForms>
+    <NoWarn>MSB3277</NoWarn>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <RestoreEnablePackagePruning>false</RestoreEnablePackagePruning>
+    <MyType>Windows</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
+  </ItemGroup>
+</Project>

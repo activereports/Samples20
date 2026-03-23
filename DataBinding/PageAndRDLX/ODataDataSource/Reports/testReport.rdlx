@@ -1,0 +1,219 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">testReport</dd:Name>
+	<Body>
+		<Height>11.69in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Textbox Name="TextBox1">
+								<Top>0.25in</Top>
+								<Left>0.375in</Left>
+								<Width>4in</Width>
+								<Height>0.375in</Height>
+								<Style>
+									<FontSize>14pt</FontSize>
+									<FontStyle>Italic</FontStyle>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Value>=Fields!Id.Value</Value>
+							</Textbox>
+							<Table Name="Table1">
+								<Top>0.8in</Top>
+								<Width>7.384583in</Width>
+								<Height>2.159001cm</Height>
+								<Style>
+									<FontFamily>Arial</FontFamily>
+								</Style>
+								<ZIndex>1</ZIndex>
+								<DataSetName>DataSet1</DataSetName>
+								<Header>
+									<TableRows>
+										<TableRow>
+											<Height>0.635001cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox2">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value>Company Name</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox3">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value>Contact Name</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox4">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value>Address</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>0.6in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox5">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<DataElementName>CompanyName</DataElementName>
+															<Value>=Fields!CompanyName.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox6">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<DataElementName>ContactName</DataElementName>
+															<Value>=Fields!ContactName.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox7">
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<DataElementName>Address</DataElementName>
+															<Value>=Fields!Address.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">8.75in</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">0in</dd:FixedWidth>
+								<TableColumns>
+									<TableColumn>
+										<Width>5.82125cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>4.058193cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>3.495038in</Width>
+									</TableColumn>
+								</TableColumns>
+							</Table>
+						</ReportItems>
+						<PaperOrientation>Portrait</PaperOrientation>
+						<Width>8.27in</Width>
+						<Height>11.69in</Height>
+						<LeftMargin>0.4895833in</LeftMargin>
+						<TopMargin>0.3125in</TopMargin>
+						<RightMargin>0.3958333in</RightMargin>
+						<BottomMargin>1in</BottomMargin>
+					</Page>
+				</Pages>
+				<DataSetName>DataSet1</DataSetName>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>0.4895833in</LeftMargin>
+	<RightMargin>0.3958333in</RightMargin>
+	<TopMargin>0.3125in</TopMargin>
+	<PageHeight>11.69in</PageHeight>
+	<PageWidth>8.27in</PageWidth>
+	<Width>8.27in</Width>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>jsondoc=;schemadata={"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"value":{"type":"array","items":{"type":"object","properties":{"CustomerID":{"type":"string"},"CompanyName":{"type":"string"},"ContactName":{"type":"string"},"ContactTitle":{"type":"string"},"Address":{"type":"string"},"City":{"type":"string"},"PostalCode":{"type":"string"},"Country":{"type":"string"},"Phone":{"type":"string"},"Fax":{"type":"string"}},"required":["CustomerID","CompanyName","ContactName","ContactTitle","Address","City","PostalCode","Country","Phone","Fax"]}},"ResponseStatus":{"type":"object","properties":{}}},"required":["value","ResponseStatus"]}</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="CompanyName">
+					<DataField>CompanyName</DataField>
+				</Field>
+				<Field Name="ContactName">
+					<DataField>ContactName</DataField>
+				</Field>
+				<Field Name="ContactTitle">
+					<DataField>ContactTitle</DataField>
+				</Field>
+				<Field Name="Address">
+					<DataField>Address</DataField>
+				</Field>
+				<Field Name="City">
+					<DataField>City</DataField>
+				</Field>
+				<Field Name="PostalCode">
+					<DataField>PostalCode</DataField>
+				</Field>
+				<Field Name="Country">
+					<DataField>Country</DataField>
+				</Field>
+				<Field Name="Phone">
+					<DataField>Phone</DataField>
+				</Field>
+				<Field Name="Fax">
+					<DataField>Fax</DataField>
+				</Field>
+				<Field Name="Region">
+					<DataField>Region</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.value[*]</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

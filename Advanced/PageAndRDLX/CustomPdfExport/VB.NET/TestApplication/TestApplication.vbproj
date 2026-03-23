@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Title>ActiveReports Sample</Title>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Description>ActiveReports Sample</Description>
+    <Copyright>MESCIUS inc.</Copyright>
+    <Product>ActiveReports Sample</Product>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ActiveReports.Samples.Export.Rendering</RootNamespace>
+    <StartupObject>ActiveReports.Samples.Export.Rendering.My.MyApplication</StartupObject>
+    <AssemblyName>ActiveReports.Samples.TestApplication</AssemblyName>
+    <TargetFrameworks>net472;net10.0-windows</TargetFrameworks>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformName>windows</PlatformName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <RestoreEnablePackagePruning>false</RestoreEnablePackagePruning>
+    <MyType>WindowsForms</MyType>
+    <NoWarn>NU1701;MSB3277</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net472'">
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="ActiveReports.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PdfRendering\PdfRendering.vbproj">
+      <Private>true</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="PDFsharp-gdi">
+      <Version>6.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Svg">
+      <Version>3.4.7</Version>
+    </PackageReference>
+    <PackageReference Include="PdfiumViewer.Updated">
+      <Version>2.14.5</Version>
+    </PackageReference>
+    <PackageReference Include="bblanchon.PDFium.Win32">
+      <Version>145.0.7606</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Export.Pdf">
+      <Version>20.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Viewer.Win">
+      <Version>20.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Core">
+      <Version>1.0.119</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Encoding.CodePages">
+      <Version>10.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Resources.Extensions">
+      <Version>10.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>
