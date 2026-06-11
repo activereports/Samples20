@@ -67,10 +67,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MESCIUS.ActiveReports.Viewer.Win">
-      <Version>20.0.2</Version>
+      <Version>20.1.2</Version>
     </PackageReference>
-    <PackageReference Include="System.Data.SQLite.Core">
-      <Version>1.0.119</Version>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <Version>3.0.2</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Encoding.CodePages">
       <Version>10.0.0</Version>

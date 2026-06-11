@@ -1,4 +1,4 @@
-﻿Imports Microsoft.Data.Sqlite
+﻿Imports System.Data.Sqlite
 Imports Microsoft.AspNetCore.Hosting
 Imports Microsoft.AspNetCore.OData.Routing.Controllers
 Imports Microsoft.Extensions.Configuration
@@ -20,10 +20,10 @@ Namespace Controllers
 			Dim movies = New List(Of Movie)()
 			
 			Dim connStr = _configuration.GetSection("ConnectionStrings")("Reels").Replace("$appPath$", _env.ContentRootPath)
-			Dim conn As New SqliteConnection(connStr)
+			Dim conn As New SQLiteConnection(connStr)
 			conn.Open()
-			Dim cmd As New SqliteCommand("SELECT Movie.MovieID, Movie.Title, Movie.MPAA, Movie.YearReleased FROM Movie ORDER BY Movie.YearReleased", conn)
-			Dim dataReader As SqliteDatareader = cmd.ExecuteReader()
+			Dim cmd As New SQLiteCommand("SELECT Movie.MovieID, Movie.Title, Movie.MPAA, Movie.YearReleased FROM Movie ORDER BY Movie.YearReleased", conn)
+			Dim dataReader As SQLiteDatareader = cmd.ExecuteReader()
 			While dataReader.Read()
 				movies.Add(New Movie() With {
 					          .Id = CType(dataReader.GetValue(0), Integer),

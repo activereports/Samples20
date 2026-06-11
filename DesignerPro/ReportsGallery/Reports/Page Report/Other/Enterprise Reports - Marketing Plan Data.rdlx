@@ -1,4 +1,5 @@
-﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
 	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Enterprise Reports - Marketing Plan Data.rdlx</dd:Name>
 	<Body>
 		<Height>11in</Height>
@@ -8,9 +9,10 @@
 					<Page>
 						<ReportItems>
 							<Textbox Name="TextBox2">
-								<Height>0.375in</Height>
+								<Top>1.25in</Top>
 								<Left>0.375in</Left>
-								<Value>=Now</Value>
+								<Width>4.25in</Width>
+								<Height>0.375in</Height>
 								<Style>
 									<Color>#5b2664</Color>
 									<FontFamily>Arial</FontFamily>
@@ -24,11 +26,11 @@
 									<PaddingTop>2pt</PaddingTop>
 									<TextAlign>Left</TextAlign>
 								</Style>
-								<Top>1.25in</Top>
-								<Width>4.25in</Width>
 								<ZIndex>4</ZIndex>
+								<Value>=Now</Value>
 							</Textbox>
 							<Shape Name="Shape2">
+								<Width>14.3811in</Width>
 								<Height>1in</Height>
 								<Style>
 									<BackgroundColor>#f1f1f1</BackgroundColor>
@@ -39,14 +41,14 @@
 										<Default>None</Default>
 									</BorderStyle>
 								</Style>
-								<Width>14.3811in</Width>
 								<ZIndex>1</ZIndex>
 								<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
 							</Shape>
 							<Textbox Name="TextBox1">
-								<Height>0.5in</Height>
+								<Top>0.25in</Top>
 								<Left>0.5in</Left>
-								<Value>Marketing Plan Data</Value>
+								<Width>4.125in</Width>
+								<Height>0.5in</Height>
 								<Style>
 									<BackgroundColor>Transparent</BackgroundColor>
 									<Color>#5b2664</Color>
@@ -59,19 +61,19 @@
 									<PaddingRight>2pt</PaddingRight>
 									<PaddingTop>2pt</PaddingTop>
 								</Style>
-								<Top>0.25in</Top>
-								<Width>4.125in</Width>
 								<ZIndex>5</ZIndex>
+								<Value>Marketing Plan Data</Value>
 							</Textbox>
 							<Image Name="Image1">
-								<Height>0.75in</Height>
+								<DataElementName>Image1</DataElementName>
+								<Top>0.125in</Top>
 								<Left>10in</Left>
+								<Width>3.75in</Width>
+								<Height>0.75in</Height>
+								<ZIndex>7</ZIndex>
 								<Sizing>Fit</Sizing>
 								<Source>Embedded</Source>
-								<Top>0.125in</Top>
 								<Value>AcmeLogo-vertical-500px</Value>
-								<Width>3.75in</Width>
-								<ZIndex>7</ZIndex>
 							</Image>
 							<Line Name="Line2">
 								<Height>0in</Height>
@@ -91,9 +93,10 @@
 								<ZIndex>8</ZIndex>
 							</Line>
 							<Textbox Name="TextBox19">
-								<Height>0.25in</Height>
+								<Top>9.75in</Top>
 								<Left>12.7249in</Left>
-								<Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+								<Width>1.6562in</Width>
+								<Height>0.25in</Height>
 								<Style>
 									<Color>#6e6e6e</Color>
 									<PaddingBottom>2pt</PaddingBottom>
@@ -103,14 +106,14 @@
 									<TextAlign>Right</TextAlign>
 									<VerticalAlign>Middle</VerticalAlign>
 								</Style>
-								<Top>9.75in</Top>
-								<Width>1.6562in</Width>
 								<ZIndex>13</ZIndex>
+								<Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
 							</Textbox>
 							<Textbox Name="TextBox3">
-								<Height>0.25in</Height>
+								<Top>1.75in</Top>
 								<Left>9in</Left>
-								<Value>Not Started</Value>
+								<Width>1.25in</Width>
+								<Height>0.25in</Height>
 								<Style>
 									<BackgroundColor>#9ad0d6</BackgroundColor>
 									<Color>Black</Color>
@@ -125,14 +128,14 @@
 									<TextAlign>Center</TextAlign>
 									<VerticalAlign>Middle</VerticalAlign>
 								</Style>
-								<Top>1.75in</Top>
-								<Width>1.25in</Width>
 								<ZIndex>14</ZIndex>
+								<Value>Not Started</Value>
 							</Textbox>
 							<Textbox Name="TextBox4">
-								<Height>0.25in</Height>
+								<Top>1.75in</Top>
 								<Left>10.25in</Left>
-								<Value>In Progress</Value>
+								<Width>1.25in</Width>
+								<Height>0.25in</Height>
 								<Style>
 									<BackgroundColor>#ffd9b3</BackgroundColor>
 									<Color>Black</Color>
@@ -147,14 +150,14 @@
 									<TextAlign>Center</TextAlign>
 									<VerticalAlign>Middle</VerticalAlign>
 								</Style>
-								<Top>1.75in</Top>
-								<Width>1.25in</Width>
 								<ZIndex>14</ZIndex>
+								<Value>In Progress</Value>
 							</Textbox>
 							<Textbox Name="TextBox5">
-								<Height>0.25in</Height>
+								<Top>1.75in</Top>
 								<Left>11.5in</Left>
-								<Value>Delayed</Value>
+								<Width>1.25in</Width>
+								<Height>0.25in</Height>
 								<Style>
 									<BackgroundColor>#f496a0</BackgroundColor>
 									<FontFamily>Arial</FontFamily>
@@ -168,14 +171,14 @@
 									<TextAlign>Center</TextAlign>
 									<VerticalAlign>Middle</VerticalAlign>
 								</Style>
-								<Top>1.75in</Top>
-								<Width>1.25in</Width>
 								<ZIndex>14</ZIndex>
+								<Value>Delayed</Value>
 							</Textbox>
 							<Textbox Name="TextBox6">
-								<Height>0.25in</Height>
+								<Top>1.75in</Top>
 								<Left>12.75in</Left>
-								<Value>Complete</Value>
+								<Width>1.25in</Width>
+								<Height>0.25in</Height>
 								<Style>
 									<BackgroundColor>#bcd5ab</BackgroundColor>
 									<FontFamily>Arial</FontFamily>
@@ -189,9 +192,8 @@
 									<TextAlign>Center</TextAlign>
 									<VerticalAlign>Middle</VerticalAlign>
 								</Style>
-								<Top>1.75in</Top>
-								<Width>1.25in</Width>
 								<ZIndex>14</ZIndex>
+								<Value>Complete</Value>
 							</Textbox>
 							<Line Name="Line1">
 								<Height>0.25in</Height>
@@ -239,6 +241,15 @@
 								<ZIndex>17</ZIndex>
 							</Line>
 							<Table Name="Table2">
+								<Top>2.625in</Top>
+								<Width>14.3827in</Width>
+								<Height>1.322915in</Height>
+								<Style>
+									<BorderStyle>
+										<Default>None</Default>
+									</BorderStyle>
+								</Style>
+								<ZIndex>18</ZIndex>
 								<Header>
 									<TableRows>
 										<TableRow>
@@ -248,7 +259,6 @@
 													<ColSpan>5</ColSpan>
 													<ReportItems>
 														<Textbox Name="TextBox25">
-															<Value />
 															<Style>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
@@ -261,6 +271,7 @@
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value />
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -268,7 +279,6 @@
 													<ColSpan>2</ColSpan>
 													<ReportItems>
 														<Textbox Name="TextBox14">
-															<Value>ANTICIPATED</Value>
 															<Style>
 																<Color>#5b2664</Color>
 																<FontFamily>Arial</FontFamily>
@@ -289,6 +299,7 @@
 																</BorderStyle>
 															</Style>
 															<ZIndex>22</ZIndex>
+															<Value>ANTICIPATED</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -296,7 +307,6 @@
 													<ColSpan>2</ColSpan>
 													<ReportItems>
 														<Textbox Name="TextBox15">
-															<Value>ACTUAL</Value>
 															<Style>
 																<Color>#5b2664</Color>
 																<FontFamily>Arial</FontFamily>
@@ -317,6 +327,7 @@
 																</BorderStyle>
 															</Style>
 															<ZIndex>22</ZIndex>
+															<Value>ACTUAL</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -324,7 +335,6 @@
 													<ColSpan>2</ColSpan>
 													<ReportItems>
 														<Textbox Name="TextBox16">
-															<Value>COST</Value>
 															<Style>
 																<Color>#5b2664</Color>
 																<FontFamily>Arial</FontFamily>
@@ -345,6 +355,7 @@
 																</BorderStyle>
 															</Style>
 															<ZIndex>22</ZIndex>
+															<Value>COST</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -356,7 +367,6 @@
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox7">
-															<Value />
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -375,14 +385,13 @@
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value />
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox8">
-															<Value>
-Task</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -402,14 +411,14 @@ Task</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+Task</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox23">
-															<Value>
-Status</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -429,14 +438,14 @@ Status</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+Status</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox9">
-															<Value> 
-Owner</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -456,14 +465,14 @@ Owner</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value> 
+Owner</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox10">
-															<Value>
-Assigned</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -483,14 +492,14 @@ Assigned</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+Assigned</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox18">
-															<Value>
-Start Date</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -510,14 +519,14 @@ Start Date</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+Start Date</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox27">
-															<Value>
-End Date</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -537,14 +546,14 @@ End Date</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+End Date</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox36">
-															<Value> 
-Start Date</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -564,14 +573,14 @@ Start Date</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value> 
+Start Date</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox40">
-															<Value>
-End Date</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -591,14 +600,14 @@ End Date</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+End Date</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox44">
-															<Value>
-Estimated</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -618,14 +627,14 @@ Estimated</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+Estimated</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox48">
-															<Value>
-Actual</Value>
 															<Style>
 																<BackgroundColor>#f1f1f1</BackgroundColor>
 																<Color>#5b2664</Color>
@@ -645,6 +654,8 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>
+Actual</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -660,7 +671,6 @@ Actual</Value>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox17">
-															<Value />
 															<Style>
 																<BackgroundColor>=iif(Fields!Task_ID.Value=1,"#ffd9b3",    iif(Fields!Task_ID.Value=2,"#ffd9b3",       iif(Fields!Task_ID.Value=7,"#ffd9b3",        iif       (Fields!Task_ID.Value=8,"#ffd9b3", iif(Fields!Task_ID.Value=3,"#bcd5ab",    iif(Fields!Task_ID.Value=11,"#bcd5ab",      iif(Fields!Task_ID.Value=13,"#bcd5ab",       iif       (Fields!Task_ID.Value=14,"#bcd5ab", iif(Fields!Task_ID.Value=4,"#f496a0",    iif(Fields!Task_ID.Value=5,"#f496a0",      iif(Fields!Task_ID.Value=6,"#f496a0",       iif       (Fields!Task_ID.Value=10,"#f496a0","#9ad0d6"    )       )         )                 )    )       )         )                 )    )       )         )                 )</BackgroundColor>
 																<FontFamily>Arial</FontFamily>
@@ -678,13 +688,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value />
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox11">
-															<Value>=Fields!Task_Name.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -701,13 +711,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!Task_Name.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox24">
-															<Value>=Fields!Task_Status.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -726,13 +736,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!Task_Status.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox12">
-															<Value>=Fields!Task_Owner.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -750,13 +760,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!Task_Owner.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox13">
-															<Value>=Fields!AssignTO.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -774,13 +784,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!AssignTO.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox21">
-															<Value>=Fields!Anticipated_StartDate.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -799,13 +809,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!Anticipated_StartDate.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox29">
-															<Value>=Fields!Anticipated_EndDate.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -824,13 +834,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!Anticipated_EndDate.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox38">
-															<Value>=Fields!Actual_StartDate.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -849,13 +859,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!Actual_StartDate.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox42">
-															<Value>=Fields!Actual_EndDate.Value</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -874,13 +884,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=Fields!Actual_EndDate.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox46">
-															<Value>=IIF(Fields!Estimated_Cost.Value,"$" &amp;Fields!Estimated_Cost.Value)</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -899,13 +909,13 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=IIF(Fields!Estimated_Cost.Value,"$" &amp; Fields!Estimated_Cost.Value, "")</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
 												<TableCell>
 													<ReportItems>
 														<Textbox Name="TextBox50">
-															<Value>=IIF(Fields!Actual_Cost.Value,"$"&amp;Fields!Actual_Cost.Value)</Value>
 															<Style>
 																<FontFamily>Arial</FontFamily>
 																<FontSize>12pt</FontSize>
@@ -924,6 +934,7 @@ Actual</Value>
 																	<Default>Solid</Default>
 																</BorderStyle>
 															</Style>
+															<Value>=IIF(Fields!Actual_Cost.Value,"$"&amp;Fields!Actual_Cost.Value, "")</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -931,14 +942,8 @@ Actual</Value>
 										</TableRow>
 									</TableRows>
 								</Details>
-								<Height>1.322915in</Height>
 								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">6.75in</dd:FixedHeight>
 								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">0in</dd:FixedWidth>
-								<Style>
-									<BorderStyle>
-										<Default>None</Default>
-									</BorderStyle>
-								</Style>
 								<TableColumns>
 									<TableColumn>
 										<Width>0.151571in</Width>
@@ -974,14 +979,12 @@ Actual</Value>
 										<Width>0.995799in</Width>
 									</TableColumn>
 								</TableColumns>
-								<Top>2.625in</Top>
-								<Width>14.3827in</Width>
-								<ZIndex>18</ZIndex>
 							</Table>
 							<Textbox Name="TextBox22">
-								<Height>0.25in</Height>
+								<Top>1.25in</Top>
 								<Left>10.375in</Left>
-								<Value>STATUS COLOR LEGEND</Value>
+								<Width>2.25in</Width>
+								<Height>0.25in</Height>
 								<Style>
 									<FontFamily>Arial</FontFamily>
 									<FontSize>12pt</FontSize>
@@ -993,20 +996,30 @@ Actual</Value>
 									<PaddingTop>2pt</PaddingTop>
 									<TextAlign>Center</TextAlign>
 								</Style>
-								<Top>1.25in</Top>
-								<Width>2.25in</Width>
 								<ZIndex>23</ZIndex>
+								<Value>STATUS COLOR LEGEND</Value>
 							</Textbox>
 						</ReportItems>
+						<PaperOrientation>Landscape</PaperOrientation>
+						<Width>17in</Width>
+						<Height>11in</Height>
+						<LeftMargin>0.5in</LeftMargin>
+						<TopMargin>0.5in</TopMargin>
+						<CustomProperties>
+							<CustomProperty>
+								<Name>PaperKind</Name>
+								<Value>Ledger</Value>
+							</CustomProperty>
+						</CustomProperties>
 					</Page>
 				</Pages>
 			</FixedPage>
 		</ReportItems>
 	</Body>
 	<LeftMargin>0.5in</LeftMargin>
+	<TopMargin>0.5in</TopMargin>
 	<PageHeight>11in</PageHeight>
 	<PageWidth>17in</PageWidth>
-	<TopMargin>0.5in</TopMargin>
 	<Width>17in</Width>
 	<EmbeddedImages>
 		<EmbeddedImage Name="AcmeLogo-vertical-500px">

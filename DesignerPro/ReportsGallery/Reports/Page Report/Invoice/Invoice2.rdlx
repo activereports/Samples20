@@ -593,6 +593,9 @@
 				<Field Name="Address">
 					<DataField>Address</DataField>
 				</Field>
+				<Field Name="PostalCode">
+					<DataField>PostalCode</DataField>
+				</Field>
 				<Field Name="Phone">
 					<DataField>Phone</DataField>
 				</Field>
@@ -616,7 +619,7 @@
 				</Field>
 			</Fields>
 			<Query>
-				<CommandText>select t.CustomerID, CompanyName,Address, Phone, Fax, t.ProductID, ProductName, Quantity, t.UnitPrice as Price, t.OrderDate from (select *  from (select * from Customers inner join Orders on Customers.CustomerID=Orders.CustomerID) as p inner join order_details on p.OrderID=order_details.OrderID) as t inner join Products on t.ProductID=Products.ProductID order by t.CustomerID</CommandText>
+				<CommandText>select t.CustomerID, CompanyName, Address, PostalCode, Phone, Fax, t.ProductID, ProductName, Quantity, t.UnitPrice as Price, t.OrderDate from (select *  from (select * from Customers inner join Orders on Customers.CustomerID=Orders.CustomerID) as p inner join order_details on p.OrderID=order_details.OrderID) as t inner join Products on t.ProductID=Products.ProductID order by t.CustomerID</CommandText>
 				<DataSourceName>NWind</DataSourceName>
 			</Query>
 		</DataSet>

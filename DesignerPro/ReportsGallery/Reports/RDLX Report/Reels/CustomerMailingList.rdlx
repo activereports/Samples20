@@ -163,7 +163,7 @@ End Function</Code>
 			<Query>
 				<CommandText>SELECT * FROM (SELECT * FROM CustomerMailingList LIMIT 100)
 UNION
-SELECT * FROM (SELECT * FROM CustomerMailingList WHERE Country = "USA" LIMIT 100)
+SELECT * FROM (SELECT * FROM CustomerMailingList WHERE Country = 'USA' LIMIT 100)
 ORDER BY 8 DESC</CommandText>
 				<DataSourceName>Reels</DataSourceName>
 			</Query>

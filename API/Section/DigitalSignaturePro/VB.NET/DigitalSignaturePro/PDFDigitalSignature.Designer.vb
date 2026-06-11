@@ -68,7 +68,7 @@ Partial Class PDFDigitalSignature
 		Me.arvMain.Sidebar.TocPanel.Expanded = True
 		Me.arvMain.Sidebar.TocPanel.Width = 200
 		Me.arvMain.Sidebar.Width = 200
-		Me.arvMain.Size = New System.Drawing.Size(933, 613)
+		Me.arvMain.Size = New System.Drawing.Size(933, 633)
 		Me.arvMain.TabIndex = 0
 		'
 		'splitContainer
@@ -99,7 +99,7 @@ Partial Class PDFDigitalSignature
 		Me.lblVisibilityType.AutoSize = True
 		Me.lblVisibilityType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
 		Me.lblVisibilityType.ImeMode = System.Windows.Forms.ImeMode.NoControl
-		Me.lblVisibilityType.Location = New System.Drawing.Point(256, 28)
+		Me.lblVisibilityType.Location = New System.Drawing.Point(256, 23)
 		Me.lblVisibilityType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 		Me.lblVisibilityType.Name = "lblVisibilityType"
 		Me.lblVisibilityType.Size = New System.Drawing.Size(113, 16)
@@ -112,7 +112,7 @@ Partial Class PDFDigitalSignature
 		Me.cmbVisibilityType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
 		Me.cmbVisibilityType.FormattingEnabled = True
 		Me.cmbVisibilityType.Items.AddRange(New Object() {"Invisible", "Text", "Image", "ImageText"})
-		Me.cmbVisibilityType.Location = New System.Drawing.Point(381, 24)
+		Me.cmbVisibilityType.Location = New System.Drawing.Point(381, 19)
 		Me.cmbVisibilityType.Margin = New System.Windows.Forms.Padding(4)
 		Me.cmbVisibilityType.Name = "cmbVisibilityType"
 		Me.cmbVisibilityType.Size = New System.Drawing.Size(160, 24)
@@ -125,7 +125,7 @@ Partial Class PDFDigitalSignature
 		Me.chkTimeStamp.CheckState = System.Windows.Forms.CheckState.Checked
 		Me.chkTimeStamp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
 		Me.chkTimeStamp.ImeMode = System.Windows.Forms.ImeMode.NoControl
-		Me.chkTimeStamp.Location = New System.Drawing.Point(637, 26)
+		Me.chkTimeStamp.Location = New System.Drawing.Point(637, 21)
 		Me.chkTimeStamp.Margin = New System.Windows.Forms.Padding(4)
 		Me.chkTimeStamp.Name = "chkTimeStamp"
 		Me.chkTimeStamp.Size = New System.Drawing.Size(127, 21)
@@ -137,10 +137,10 @@ Partial Class PDFDigitalSignature
 		'
 		Me.pdfExportButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
 		Me.pdfExportButton.ImeMode = System.Windows.Forms.ImeMode.NoControl
-		Me.pdfExportButton.Location = New System.Drawing.Point(24, 14)
+		Me.pdfExportButton.Location = New System.Drawing.Point(24, 5)
 		Me.pdfExportButton.Margin = New System.Windows.Forms.Padding(4)
 		Me.pdfExportButton.Name = "pdfExportButton"
-		Me.pdfExportButton.Size = New System.Drawing.Size(191, 34)
+		Me.pdfExportButton.Size = New System.Drawing.Size(191, 44)
 		Me.pdfExportButton.TabIndex = 0
 		Me.pdfExportButton.Text = "Generate Digitally Signed PDF"
 		Me.pdfExportButton.UseVisualStyleBackColor = True

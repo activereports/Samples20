@@ -20,7 +20,7 @@
 									<PaddingRight>2pt</PaddingRight>
 									<PaddingTop>2pt</PaddingTop>
 								</Style>
-								<Value>=Fields!Id.Value</Value>
+								<Value>=Fields!CustomerID.Value</Value>
 							</Textbox>
 							<Table Name="Table1">
 								<Top>0.8in</Top>

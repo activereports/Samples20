@@ -25,8 +25,11 @@
     <RestoreEnablePackagePruning>false</RestoreEnablePackagePruning>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="System.Data.SQLite.Core">
-      <Version>1.0.119</Version>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <Version>3.0.2</Version>
     </PackageReference>
     <PackageReference Include="System.Resources.Extensions">
       <Version>10.0.0</Version>

@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using System.Data.SQLite;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using ODataEndPoint.Models;
 
@@ -20,9 +20,9 @@ namespace ODataEndPoint.Controllers
 			var movies = new List<Movie>();
 
 			var connStr = _configuration.GetSection("ConnectionStrings")["Reels"]?.Replace("$appPath$", _env.ContentRootPath);
-			var conn = new SqliteConnection(connStr);
+			var conn = new SQLiteConnection(connStr);
 			conn.Open();
-			var cmd = new SqliteCommand("SELECT Movie.MovieID, Movie.Title, Movie.MPAA, Movie.YearReleased FROM Movie ORDER BY Movie.YearReleased", conn);
+			var cmd = new SQLiteCommand("SELECT Movie.MovieID, Movie.Title, Movie.MPAA, Movie.YearReleased FROM Movie ORDER BY Movie.YearReleased", conn);
 			var dataReader = cmd.ExecuteReader();
 			while (dataReader.Read())
 			{

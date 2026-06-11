@@ -13,6 +13,7 @@
     <StartupObject>ActiveReports.Samples.ODataDataSource.My.MyApplication</StartupObject>
     <AssemblyName>ActiveReports.Samples.ODataDataSource.ObjectDataSourceClient</AssemblyName>
     <TargetFrameworks>net472;net10.0-windows</TargetFrameworks>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <PlatformName>windows</PlatformName>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -61,10 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MESCIUS.ActiveReports.Viewer.Win">
-      <Version>20.0.2</Version>
+      <Version>20.1.2</Version>
     </PackageReference>
-    <PackageReference Include="System.Data.SQLite.Core">
-      <Version>1.0.119</Version>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <Version>3.0.2</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Encoding.CodePages">
       <Version>10.0.0</Version>

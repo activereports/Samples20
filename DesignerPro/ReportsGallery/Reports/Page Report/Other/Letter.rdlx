@@ -312,7 +312,7 @@
 Customers.CustomerID, Customers.CompanyName, 
 Customers.ContactName, Customers.Address, 
 Customers.City, Customers.Region, Customers.Country, Customers.PostalCode, Orders.OrderID, Orders.OrderDate, order_subtotals.Subtotal
-FROM Customers INNER JOIN (order_subtotals INNER JOIN Orders ON order_subtotals.OrderID = Orders.OrderID) ON Customers.CustomerID = Orders.CustomerID WHERE CompanyName = "Ernst Handel"</CommandText>
+FROM Customers INNER JOIN (order_subtotals INNER JOIN Orders ON order_subtotals.OrderID = Orders.OrderID) ON Customers.CustomerID = Orders.CustomerID WHERE CompanyName = 'Ernst Handel'</CommandText>
 				<DataSourceName>NWind</DataSourceName>
 			</Query>
 		</DataSet>

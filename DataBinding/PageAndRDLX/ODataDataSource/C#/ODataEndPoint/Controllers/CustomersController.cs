@@ -1,5 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-using Microsoft.Data.Sqlite;
+using System.Data.SQLite;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
@@ -22,10 +22,10 @@ namespace ODataEndPoint.Controllers
 		public IActionResult Get()
 		{
 			var connStr = _configuration.GetSection("ConnectionStrings")["Nwind"]?.Replace("$appPath$", _env.ContentRootPath);
-			var conn = new SqliteConnection(connStr);
+			var conn = new SQLiteConnection(connStr);
 			conn.Open();
 			var customers = new Collection<Customer>();
-			var cmd = new SqliteCommand("select customers.Customerid, customers.CompanyName, customers.ContactName, customers.Address from customers", conn);
+			var cmd = new SQLiteCommand("select customers.Customerid, customers.CompanyName, customers.ContactName, customers.Address from customers", conn);
 			var dataReader = cmd.ExecuteReader();
 			while (dataReader.Read())
 			{
